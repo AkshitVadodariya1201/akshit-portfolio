@@ -92,10 +92,3 @@ const nav = document.querySelector(".nav"),
             }
         }
 
-// Implement scroll animations for the "My Efforts" section using AOS (Animate On Scroll) library
-document.addEventListener("DOMContentLoaded", function() {
-    AOS.init({
-        duration: 1200, // values from 0 to 3000, with step 50ms
-        once: true, // whether animation should happen only once - while scrolling down
-    });
-});
