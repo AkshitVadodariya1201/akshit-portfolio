@@ -1,6 +1,6 @@
 // typing animation
 const typed = new Typed(".typing", {
-    strings: ["", "Rust Developer", "Full Stack Developer"],
+    strings: ["", "Full Stack Developer", "Rust Developer"],
     typeSpeed: 100,
     BackSpeed: 60,
     loop: true,
