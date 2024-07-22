@@ -1,13 +1,12 @@
-
 /* contact */
-.contact-title{
+.contact-title {
     color: var(--skin-color);
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
 }
 
-.contact-sub-title{
+.contact-sub-title {
     color: var(--text-black-900);
     text-align: center;
     font-size: 15px;
@@ -43,18 +42,21 @@
             line-height: 25px;
             color: var(--text-black-700);
             font-weight: 400;
-        }
 
+            a {
+                color: var(--text-black-700);
+            }
+        }
     }
 
-    @media (max-width: 991px){
+    @media (max-width: 991px) {
         .contact-info-item {
             flex: 0 0 50%;
             min-width: 50%;
         }
     }
 
-    @media  (max-width: 767px) {
+    @media (max-width: 767px) {
         .contact-info-item {
             flex: 0 0 100%;
             min-width: 100%;
@@ -125,4 +127,3 @@
         }
     }
 }
-
