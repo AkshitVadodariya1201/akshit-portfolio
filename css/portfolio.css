@@ -15,9 +15,13 @@
         }
     }
 
+    .row {
+        justify-content: space-around;
+    }
+
     .portfolio-item {
-        flex: 0 0 33.33%;
-        max-width: 33.33%;
+        flex: 0 0 34.33%;
+        max-width: 34.33%;
         margin-bottom: 30px;
 
         .portfolio-item-inner {
@@ -33,14 +37,18 @@
         }
     }
 
-    @media (max-width:991px) {
+    @media (max-width: 991px) {
         .portfolio-item {
             flex: 0 0 50%;
             max-width: 50%;
-        } 
+        }
     }
 
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
+        .row {
+            justify-content: space-around;
+        }
+
         .portfolio-item {
             flex: 0 0 100%;
             max-width: 100%;

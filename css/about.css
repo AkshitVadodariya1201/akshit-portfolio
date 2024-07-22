@@ -47,14 +47,27 @@
                         color: var(--text-black-700);
                         margin-left: 4px;
                         display: inline-block;
-
                     }
-                    @media (max-width:1199px){
+
+                    @media (max-width: 1199px) {
                         & span {
-                          display: block;
-                          margin-left: 0;
+                            display: block;
+                            margin-left: 0;
                         }
                     }
+
+                    @media (max-width: 530px) {
+                        & span {
+                            display: inline;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 530px) {
+                & .info-item {
+                    flex: 0 0 100%;
+                    max-width: 100%;
                 }
             }
 
@@ -133,6 +146,7 @@
             & .timeline {
                 background-color: var(--bg-black-100);
                 padding: 30px 15px;
+                padding-right: 30px;
                 border: 1px solid var(--bg-black-50);
                 border-radius: 10px;
                 width: 100%;
@@ -148,7 +162,7 @@
                     }
 
                     &::before {
-                        content: ' ';
+                        content: " ";
                         width: 1px;
                         position: absolute;
                         height: 100%;
@@ -197,6 +211,7 @@
         }
 
         @media (max-width: 767px) {
+
             & .experience,
             & .education,
             & .skills,
@@ -204,7 +219,12 @@
                 flex: 0 0 100%;
                 max-width: 100%;
             }
-          
+        }
+
+        @media (max-width: 530px) {
+            .row {
+                flex-direction: column;
+            }
         }
     }
 }
